@@ -10,5 +10,6 @@ urlpatterns = [
     path('robust/', views.robust, name='robust'),
     path('thankyou/', views.thankyou, name='thankyou'),
     path('preview/', views.preview, name='preview'),
+    path('capture/', views.capture, name='capture'),
     path('imgprocess/', views.imgprocess, name='imgprocess')
 ]

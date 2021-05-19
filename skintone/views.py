@@ -27,6 +27,10 @@ def preview(request):
     return render(request, 'skintone/preview.html')
 
 
+def capture(request):
+    return render(request, 'skintone/capture.html')
+
+
 def imgprocess(request):
     form= ImageUploadForm(request.POST, request.FILES)
     if form.is_valid():

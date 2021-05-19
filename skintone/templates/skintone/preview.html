@@ -90,7 +90,7 @@
             <div class="form-group inputDnD">
                 <input type="file" name="inputFile" class="form-control-file text-primary font-weight-bold" id="inputFile" accept="image/*" >
             </div>       
-            <a id="one" class="btn btn-warning" href="capture.html">CAPTURE-IMAGE</a>
+            <a id="one" class="btn btn-warning" href="{% url 'skin:capture' %}">CAPTURE-IMAGE</a>
             <a id="six"  class="btn btn-warning" onclick="document.getElementById('inputFile').click()">UPLOAD-FILE</a>
             <div class="image-preview" id="imagePreview">
               <img src="" alt="Image Preview" class="image-preview__image">
