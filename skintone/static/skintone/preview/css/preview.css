@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+h1{
+     color:rgb(231, 231, 231);
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin-left: 10%;
+     /* margin-left: 10px; */
+
+  
+    
+}
+h3{
+    margin-left: 17%;
+    color: yellow;
+    padding-top: 88px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1000%;
+}
+#one{
+    
+ color: rgba(0, 0, 0, 0.959);
+ font-size: 17px;
+ margin-left: 16% ;
+ 
+}
+#six{
+    
+ color: rgba(0, 0, 0, 0.959);
+ font-size: 17px;
+ margin-left: 0% ;
+ 
+}
+#five{
+    
+ color: rgba(0, 0, 0, 0.959);
+ font-size: 25px;
+ margin-left: 16% ;
+ padding: 7px 96px 7px 96px;
+ 
+}
+
+#two{
+    font-size: 21px;
+    margin-left: 950px;
+    color:whitesmoke;
+    /* width: 30px; */
+    padding: 9px 30px 5px 30px;
+}
+  
+#three{
+    font-size: 21px;
+    color:whitesmoke;
+    /* width: 30px; */
+    padding: 9px 30px 5px 30px;
+    
+}
+
+#four{
+    font-size: 21px;
+    color:whitesmoke;
+    padding: 9px 30px 5px 30px;
+    /* width: 30px; */
+}  
+#two:hover{
+    background-color: rgb(189, 127, 127);
+}    
+#three:hover{
+    background-color: rgb(189, 127, 127);
+}    
+#four:hover{
+    background-color: rgb(189, 127, 127);
+} 
+input[type="file"]{
+    display: none;
+}
+label{
+    color: white;
+    height: 60px;
+    width: 250px;
+    background-color: #f5af09;
+    position: absolute;
+    margin: auto;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "montserrat",sans-serif;
+} 
+h4{
+    margin-left: 10%;
+    color: rgb(255, 255, 255);
+    padding-top: 88px;
+    font-family: Segoe UI, Tahoma, Geneva,'Verdana', sans-serif;
+    font-size: 1000%;
+}
+
+.model{
+    width: 500px;
+    height: 450px;
+    position: absolute;
+    right: 150px;
+    top: 200px;
+}
+.image-preview{
+    width: 300px;
+    min-height: 100px;
+    border: 2px solid #dddddd;
+    margin-top: 50px;
+    margin-left: 16%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #cccccc;
+}
+.image-preview__image{
+    display: none;
+    width: 100%;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skininfo</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><p id="logo">detect-skin</p></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{% url 'skin:home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'skin:readmore' %}">Read More</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+   <br><br><br>
+    <center><h1> Our three modes of classification</h1></center>
+    <center><h2>Flutter over the images to know more!</h2></center>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="container">
+                <img src="https://sinneslebenmagazin.files.wordpress.com/2020/01/cover_black-beauty_1700-x-1200.jpg?w=791" alt="" class="image">
+                <div class="overlay">
+                    <div class="text">The deepest range of skin tones.Dark-pigmented people living in high sunlight environments are
+                        at an advantage due to the high amounts of melanin produced in their skin. Dark skin is a type
+                        of human skin color that are rich in melanin pigments, especially eumelanin.Dark complexions
+                        typically originate from parts of the world that have the most exposure to ultraviolet radiation,
+                        such as the Middle East, India, and Africa. As with those who have medium skin, you are not exempt
+                        from sun damage if you have this skin tone, and are in fact more prone to hyperpigmentation, so hold onto that sunscreen!</div>
+                </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="container">
+                <img src="https://api.ellecanada.com/app/uploads/2019/09/SatyPratha_PriyankaChopra2.jpg" alt="" class="image">
+                <div class="overlay">
+                    <div class="text">You have a tan skin tone with warm golden or olive undertones. If there are more yellow,
+                        peach and golden hues, then the undertone is considered ‘warm’.Medium complexions are
+                        typical of Southern Europe and Northern Asian descent. Sometimes referred to “olive”,
+                        this skin tone is a neutral, well-balanced beige appearance and will make finding the
+                        right foundation shade much easier. If you determine this is your skin tone, you probably
+                        tan well in the sun (note: that doesn’t mean you’re immune to sun-related aging!</div>
+                </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="container">
+                <img src=" https://upload.wikimedia.org/wikipedia/commons/5/54/Jennifer_Lawrence_in_2016.jpg" alt="" class="image">
+                <div class="overlay">
+                    <div class="text">The lightest range of skin tones. Generally those with skin considered “light” have warmer
+                        undertones than those with fair skin. You likely are able to tan in the summer.Light or fair
+                        skin tones tend to historically derive from northern European countries which faced frequent
+                        snow or cloud coverage, and therefore did not need much melanin protection. Paler people are
+                        usually very sensitive to the sun and burn much easier than those with darker skin. If you find
+                        that this is your skin tone, be extra diligent with your UV protection.</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        body{
+            background: rgb(255, 76, 104);
+            background: linear-gradient(
+            90deg,
+            rgba(255, 76, 104, 1) 0%,
+            rgba(105, 0, 199, 1) 100%
+        );
+        }
+
+        #logo{
+                color: #ff4c68;
+                position: relative;
+                left: 30px;
+                top: 10px;
+                font-weight: 900;
+            }
+        h1{
+            font-family: "Montserrat", sans-serif;
+            font-weight: bolder;
+            font-size: 70px;
+            color: black;
+        }
+        h2{
+            font-family: "Montserrat", sans-serif;
+            font-weight: lighter;
+        }
+
+       .image{
+            width: 100%;
+            height: 500px;
+            margin-top: 20px;
+            transition: .5s ease;
+            border-radius: 20px;
+        }
+
+
+        .overlay {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+
+        }
+        .container:hover .image{
+            filter: blur(10px);
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: rgb(247, 247, 247);
+            font-size: 15px;
+            position: absolute;
+            font-weight: bolder;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+        }
+
+
+
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

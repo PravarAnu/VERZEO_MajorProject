@@ -1,0 +1,161 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color:rgba(0,0,0, 0.9) ;
+}
+   body{
+   background-image: ;
+   background-repeat:no-repeat;
+   background-size: cover;
+   height:100vh;
+   width:100vw;
+}
+h1{
+   font-family: sans-serif;
+   color:gold;
+   font-size: 20px;
+    font-weight:900; 
+    position:relative;
+}
+.contant{
+       padding-left:40px;
+       height: 70vh;
+       width: 100vw; 
+       color:black; 
+
+}
+.contant h3{
+       
+    font-family: cursive;
+     color:black;
+}
+
+.dj{
+    text-align: center;
+    margin: 50px 0 !important;
+   position:relative;
+}
+
+.dj:before{
+            content: "";
+            width: 0;
+        	position: absolute;
+            border: 3px solid purple;
+            border-radius: 45px;
+        	 bottom: -17px;
+             left: 50%;
+             transform: translate(-50%,-50%);
+        	 border-bottom: 5px solid #fff;
+             transition: all 0.4s;
+}
+
+.dj:hover:before{
+	width:22%;
+}
+.card
+{
+     
+   
+margin-left:43%;    
+background-color: transparent !important;
+border: none;
+padding:0 !important ;
+margin-bottom: 80px;
+
+
+}
+.card-header{
+background-color:transparent !important;
+border: none;
+padding:0 !important;
+margin-bottom:80px;
+
+
+}
+.card{
+    width: 60vw;
+    box-shadow: 0rem 0rem 1rem 0rem;
+}
+.btn-link{
+width:100%;
+height:60px;
+color: #000 !important;
+font-weight: bold !important;
+text-align: center !important;
+text-decoration: none !important;
+}
+.card-body{
+    background-color:pink;
+}
+.btn-link:after{
+    content: '\2212';
+    width: 35px;
+    font-size: 25px;
+    text-align: center;
+    right: 15px;
+    top: 11px;
+    position: absolute;
+    background-color: paleturquoise;
+}
+.btn-link.collapsed:after{
+    content: '\002B';
+}
+.btn-link:before{
+    content: '';
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    background:#fff;
+    z-index: 2;
+    transform: rotate(45deg);
+    left: 30px;
+    top: 46px;
+}
+img
+{   padding-right:-5px;
+    width:430px;
+    margin-top:5px;
+}
+.continer{
+    
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#collapseOne{
+    background-color: orange;
+}
+.card-body{
+    color:rgba(0,0,0,0.5);
+    background:yellow;
+}
+ 
+.card-body img{
+    
+ padding-left:276px;
+    width: 545px;
+    margin-top: -5px;
+    
+    background-color;
+}
+.card-body h2{
+    margin-top: 5px;
+    color:blue;
+}
+.card-header h2{
+    font-family: cursive;
+    
+}
+h3{
+    color:black;
+    font-size:25px;
+    font-weight: 900;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+li{
+    color:crimson;
+}

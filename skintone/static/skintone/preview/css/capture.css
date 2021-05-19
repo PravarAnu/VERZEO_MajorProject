@@ -1,0 +1,52 @@
+
+button {
+    font-size: 12px;
+    color: #210021;
+    padding: 10px 20px;
+    background: -moz-linear-gradient(
+        top,
+        #ffffff 0%,
+        #e3e3e3 50%,
+        #ffffff);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#ffffff),
+        color-stop(0.50, #e3e3e3),
+        to(#ffffff));
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #e3e3e3;
+    -moz-box-shadow:
+        0px 0px 0px rgba(000,000,000,0),
+        inset 0px 0px 0px rgba(255,255,255,1);
+    -webkit-box-shadow:
+        0px 0px 0px rgba(000,000,000,0),
+        inset 0px 0px 0px rgba(255,255,255,1);
+    box-shadow:
+        0px 0px 0px rgba(000,000,000,0),
+        inset 0px 0px 0px rgba(255,255,255,1);
+    text-shadow:
+        -1px -1px 0px rgba(255,255,255,0.5),
+        0px 1px 0px rgba(255,255,255,0.3);
+}
+
+
+
+video , canvas {
+  width: 400px;
+  height: 300px;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.video1{
+    
+  align-items: center;
+    position: absolute;
+    left: 230px;
+}
+.canvas1{
+    align-items: center;
+    position: absolute;
+    right: 250px;
+}
