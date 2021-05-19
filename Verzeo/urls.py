@@ -21,5 +21,4 @@ from skintone import views
 urlpatterns = [
     path('skintone/', include('skintone.urls')),
     path('admin/', admin.site.urls),
-    url('imgprocess', views.imgprocess,name="imgprocess"),
 ]
