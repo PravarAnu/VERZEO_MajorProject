@@ -34,6 +34,6 @@ def capture(request):
 def imgprocess(request):
     form= ImageUploadForm(request.POST, request.FILES)
     if form.is_valid():
-        form.save()
+        handle_uploaded_file(request.FILES['image'])
 
     return render(request, 'skintone/thankyou.html')
