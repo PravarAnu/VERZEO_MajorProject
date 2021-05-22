@@ -2,6 +2,17 @@ from skintone.forms import ImageUploadForm
 from django.shortcuts import render
 from .forms import ImageUploadForm
 
+import os
+import pprint
+import sys
+import cv2
+import imutils
+import numpy
+from collections import Counter
+from matplotlib import pyplot
+from sklearn.cluster import KMeans
+
+
 # Create your views here.
 def home(request):
     return render(request, 'skintone/home.html')
@@ -32,8 +43,5 @@ def capture(request):
 
 
 def imgprocess(request):
-    form= ImageUploadForm(request.POST, request.FILES)
-    if form.is_valid():
-        handle_uploaded_file(request.FILES['image'])
-
+    
     return render(request, 'skintone/thankyou.html')
